@@ -14,6 +14,7 @@ enum ThemeSwitcherMode {
   LIGHT_ONLY, 
   DARK_ONLY 
 }
+
 /* adjust this constant to change theme switcher behavior */
 const THEME_SWITCHER_MODE: ThemeSwitcherMode = ThemeSwitcherMode.SWITCHABLE;
 

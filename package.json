@@ -4,21 +4,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
+    "react-resume": "file:",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.1.3",
     "web-vitals": "^0.2.4"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "setupTests.js"
+    ]
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,6 +45,12 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
     "gh-pages": "^3.1.0"
-  }
+  },
+  "description": "Ever thought about making your own resume website? Turned off by unnecessarily complicated templates? Enjoy bragging about how your site is\r built with fancy technologies like React despite probably not needing to be? Then boy do I have good news for you!",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }
