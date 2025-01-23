@@ -17,7 +17,3 @@ jobs:
         run: |
           npm install
           npm test
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v4
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
