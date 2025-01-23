@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: 'lanzamientos de test'
         run: |
-          npm install react-scripts
+          npm i react-scripts
           npm test
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
