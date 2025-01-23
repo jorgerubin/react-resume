@@ -16,7 +16,12 @@
   "jest": {
     "collectCoverage": true,
     "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "json", "html"],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "json",
+      "html"
+    ]
   },
   "scripts": {
     "predeploy": "npm run build",
